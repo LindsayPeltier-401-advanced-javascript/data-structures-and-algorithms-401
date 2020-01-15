@@ -13,5 +13,4 @@ Our solution identifies the last element of the array using a for loop that iter
 ![whiteboard](./assets/01reverseArray.JPG)
 ![whiteboard](./assets/02reverseArray.JPG)
 
-## Submission Link
-[Pull Request]()
+[Code](ArrayReverse.js)
