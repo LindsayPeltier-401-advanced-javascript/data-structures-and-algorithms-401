@@ -1,6 +1,6 @@
 # Reverse an Array
 
-## Challenge
+## Challenge Description
 
 Write a function called reverseArray which takes an array as an argument. Without utilizing any of the javascript built-in array methods, return an array with elements in reversed order.
 
@@ -10,5 +10,8 @@ Our solution identifies the last element of the array using a for loop that iter
 
 ## Solution
 
-![Problem domain, visual, algorithm](/assets/IMG_4147.jpg)
-![Pseudocode](/assets/IMG_4148.jpg)
+![whiteboard](./assets/01reverseArray.JPG)
+![whiteboard](./assets/02reverseArray.JPG)
+
+## Submission Link
+[Pull Request]()
