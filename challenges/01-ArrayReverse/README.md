@@ -10,7 +10,9 @@ Our solution identifies the last element of the array using a for loop that iter
 
 ## Solution
 
-![whiteboard](./assets/01reverseArray.JPG)
-![whiteboard](./assets/02reverseArray.JPG)
+###[Code](ArrayReverse.js)
 
-[Code](ArrayReverse.js)
+---
+
+![whiteboard](../assets/01reverseArray.JPG)
+![whiteboard](../assets/02reverseArray.JPG)
