@@ -1,5 +1,4 @@
-//Code Challenge to reverse an array without using inherent javascript array properties or methods
-//Partner: Connor
+'use strict'
 
 const array1 = [1, 2, 3, 4, 5, 6];
 const newArray = [];

@@ -1,5 +1,8 @@
 # Reverse an Array
 
+Code Challenge to reverse an array without using inherent javascript array properties or methods
+Partner: Connor
+
 ## Challenge Description
 
 Write a function called reverseArray which takes an array as an argument. Without utilizing any of the javascript built-in array methods, return an array with elements in reversed order.
@@ -10,7 +13,7 @@ Our solution identifies the last element of the array using a for loop that iter
 
 ## Solution
 
-###[Code](ArrayReverse.js)
+[Code](./ArrayReverse.js)
 
 ---
 
