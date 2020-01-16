@@ -4,5 +4,4 @@
 
 
 
-//Once you’ve achieved a working solution, write a second function that removes an element from the middle index and shifts other elements in the array to fill the new gap.
 
