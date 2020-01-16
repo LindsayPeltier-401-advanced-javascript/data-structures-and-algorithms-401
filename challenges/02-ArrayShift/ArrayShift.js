@@ -1,8 +1,5 @@
 'use strict';
 
-let array1 = [2, 4, 6, 8]; // 5
-let array2 = [4, 8, 15, 23, 42]; //16
-
 //Write a function called insertShiftArray which takes in an array and the value to be added. Without utilizing any of the built-in methods available to your language, return an array with the new value added at the middle index.
 
 function insertShiftArray(array, value) {
