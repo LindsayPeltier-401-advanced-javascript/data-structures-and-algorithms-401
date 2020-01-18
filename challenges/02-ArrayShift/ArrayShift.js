@@ -40,3 +40,12 @@ function removeShiftArray(array) {
   }
   return newArray;
 }
+
+console.log(removeShiftArray([2, 4, 6, 8, 10]));
+
+/*const myfuncsObj = {
+  insertShiftArray: insertShiftArray,
+  removeShiftArray: removeShiftArray
+};*/
+
+module.exports = insertShiftArray;
