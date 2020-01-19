@@ -14,5 +14,4 @@ Write a function called BinarySearch which takes in 2 parameters: a sorted array
 [Code](./array-binary-search.js)
 
 ## Solution
-
-![Whiteboard](../assets/03arraybinaryshift.JPG)
+![whiteboard](../assets/03arraybinarysearch.JPG)
