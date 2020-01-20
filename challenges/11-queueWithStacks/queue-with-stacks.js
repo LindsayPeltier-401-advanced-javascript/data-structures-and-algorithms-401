@@ -1,4 +1,4 @@
-use strict';
+'use strict';
 
 class Node {
   constructor (value) {
@@ -32,7 +32,7 @@ class Stack {
     if(!this.top){
       return null;
     } else {
-      rturn this.top.value;
+      return this.top.value;
     }
   }
 }
@@ -48,8 +48,10 @@ class PseudoQueue{
   }
 
   dequeue(){
-    if(this.stack2.length === 0 {
-      if(this.stack1.length === 0) return 'Empty Queue';
+    if(this.stack2.length === 0) {
+      if(this.stack1.length === 0) 
+        return 'Empty Queue';
+      }
       while(this.stack1.length > 0){
         let p = this.stack1.pop();
         this.stack2.push(p);
