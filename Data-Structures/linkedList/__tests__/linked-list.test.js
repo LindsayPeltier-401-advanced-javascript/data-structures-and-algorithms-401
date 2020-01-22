@@ -93,3 +93,21 @@ it('inserts a node before a value located in the middle of list', () => {
   expect(linkedList.head.next.next.next.value).toEqual(2);
 });
 
+it('successfully insert a node after the last node in the list', () => {
+  let linkedList = new LinkedList();
+  linkedList.insert(10);
+  linkedList.insert(30);
+  linkedList.insert(40);
+  linkedList.insertAfter(10, 20);
+  expect(linkedList.head.next.next.next.value).toEqual(20);
+});
+
+it('removes nodes from the linked list', () => {
+  let linkedList = new LinkedList();
+  linkedList.insert(1);
+  linkedList.insert(2);
+  linkedList.insert(3);
+  linkedList.insert(4);
+  linkedList.remove(3);
+  expect(linkedList.head.next.value).toEqual(2);
+});
