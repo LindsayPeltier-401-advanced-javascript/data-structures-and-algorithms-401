@@ -24,7 +24,6 @@ function insertShiftArray(array, value) {
 
 console.log(insertShiftArray([2, 4, 6, 8], 0));
 
-//Once you’ve achieved a working solution, write a second function that removes an element from the middle index and shifts other elements in the array to fill the new gap.
 
 function removeShiftArray(array) {
   let newArray = [];
