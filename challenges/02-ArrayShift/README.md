@@ -22,6 +22,10 @@ Our solution identifies the last element of the array using a for loop that iter
 
 [Code](./ArrayReverse.js)
 
+[Travis](https://www.travis-ci.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401)
+
+[Jsdocs](../../docs/LinkedList.html)
+
 ---
 
 ![whiteboard](../assets/01reverseArray.JPG)

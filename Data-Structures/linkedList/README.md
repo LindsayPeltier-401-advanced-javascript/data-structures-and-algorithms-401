@@ -13,6 +13,12 @@ Write tests to prove the following functionality:
 - Will return true when finding a value within the linked list that exists
 - Will return false when searching for a value in the linked list that does not exist
 - Can properly return a collection of all the values that exist in the linked list
+- Can successfully add a node to the end of the linked list
+- Can successfully add multiple nodes to the end of a linked list
+- Can successfully insert a node before a node located i the middle of a linked list
+- Can successfully insert a node before the first node of a linked list
+- Can successfully insert after a node in the middle of the linked list
+- Can successfully insert a node after the last node of the linked list
 
 ## Approach & Efficiency
 
@@ -22,11 +28,20 @@ Write tests to prove the following functionality:
 *Define a method called insert which takes any value as an argument and adds a new node with that value to the head of the list with an O(1) Time performance.
 *Define a method called includes which takes any value as an argument and returns a boolean result depending on whether that value exists as a Node’s value somewhere within the list.
 *Define a method called toString which takes in no arguments and returns a string representing all the values in the Linked List, formatted as: "{ a } -> { b } -> { c } -> NULL"
+*Write the following methods for the Linked List class:
+  .append(value) which adds a new node with the given value to the end of the list
+  .insertBefore(value, newVal) which add a new node with the given newValue immediately before the first value node
+  .insertAfter(value, newVal) which add a new node with the given newValue immediately after the first value node
+*Stretch Goal: Write an additional method to delete a node with the given value from the linked list.
 
 ## Links and Resources
 
-[Pull Request](https://github.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/pull/11/)
+[Pull Request Lab 05](https://github.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/pull/11/)
+[Pull Request Lab 06](https://github.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/pull/12/)
 
 [Travis](https://www.travis-ci.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401)
 
 [Jsdocs](../../docs/LinkedList.html)
+
+## Solution
+![whiteboard](../../assets/06ll-insertions.JPG)
