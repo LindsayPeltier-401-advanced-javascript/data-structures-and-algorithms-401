@@ -118,6 +118,26 @@ insertAfter(value, newValue){
   newNode.next = current.next;
   current.next = newNode;
 }
-  
+
+/** 
+ * Remove a value from the linked list
+ * param {*} value
+ */
  
+remove(value) {
+  let current = this.head;
+  let previousList;
+
+  if (current.value === value) {
+    current.next = current.next.next; 
+  } else {
+    while (current.value !== value) {
+      previousList = current;
+      current = current.next;
+    }
+    previousList.next = current.next;
+  }
+ }
+  
+
 module.exports = LinkedList;
