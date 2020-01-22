@@ -102,5 +102,22 @@ insertBefore(value, newValue) {
     current.next = current.next;
   }
  
+  /** 
+   * Inserts newValue after a value in the list
+   * @param {*} value
+   * @param {*} newValue
+   */
   
+insertAfter(value, newValue){
+  let newNode = new Node(newValue);
+  let current = this.head;
+
+  while (current.value !== value) {
+    curent = current.next;
+  }
+  newNode.next = current.next;
+  current.next = newNode;
+}
+  
+ 
 module.exports = LinkedList;
