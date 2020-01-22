@@ -2,7 +2,6 @@
 
 const QueueWithStacks = require('../queue-with-stacks.js');
 
-
 describe('Queue with Stacks Tests', () => {
   let pseudoQueue;
 
