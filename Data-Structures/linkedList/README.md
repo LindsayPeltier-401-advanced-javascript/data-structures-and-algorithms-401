@@ -25,8 +25,8 @@ Write tests to prove the following functionality:
 
 ## Links and Resources
 
-[Pull Request]()
+[Pull Request](https://github.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/pull/11/)
 
-[Travis]()
+[Travis](https://www.travis-ci.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401)
 
 [Jsdocs](../../docs/LinkedList.html)
