@@ -13,5 +13,9 @@ Write a function called BinarySearch which takes in 2 parameters: a sorted array
 ## Link to code
 [Code](./array-binary-search.js)
 
+[Travis](https://www.travis-ci.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401)
+
+[Jsdocs](../../docs/LinkedList.html)
+
 ## Solution
 ![whiteboard](../assets/03arraybinarysearch.JPG)
