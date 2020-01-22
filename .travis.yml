@@ -1,6 +1,10 @@
 language: node_js
 node_js:
+<<<<<<< HEAD
   - 'stable'
+=======
+  - "stable"
+>>>>>>> 23e714427ba3c55c87bad7d4ac01659884a4a871
 branches:
   only:
     - master
