@@ -32,6 +32,7 @@ Write tests to prove the following functionality:
   .append(value) which adds a new node with the given value to the end of the list
   .insertBefore(value, newVal) which add a new node with the given newValue immediately before the first value node
   .insertAfter(value, newVal) which add a new node with the given newValue immediately after the first value node
+*Stretch Goal: Write an additional method to delete a node with the given value from the linked list.
 
 ## Links and Resources
 
@@ -41,3 +42,6 @@ Write tests to prove the following functionality:
 [Travis](https://www.travis-ci.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401)
 
 [Jsdocs](../../docs/LinkedList.html)
+
+## Solution
+![whiteboard](../../assets/06ll-insertions.JPG)

@@ -118,6 +118,7 @@ class LinkedList {
     current.next = newNode;
   }
 
+  /* Stretch Goal-----------------------------------------------> */
   /**
    * Remove a value from the linked list
    * param {*} value
