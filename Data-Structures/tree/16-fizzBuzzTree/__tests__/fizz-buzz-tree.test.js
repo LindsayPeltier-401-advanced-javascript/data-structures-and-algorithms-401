@@ -2,35 +2,35 @@
 'use strict';
 
 const fizzBuzz = require('../fizz-buzz-tree');
-const { BinarySearchTree } = require('../../15-Implementation-Trees/tree');
+const { BinaryTree } = require('../../15-Implementation-Trees/tree');
 
-describe('Fizz Buzz Tree', () => {
 
-  let BST;
-
-  beforeEach(() => {
-    BST = new BinarySearchTree(12);
-  });
-
+describe('Testing the FizzBuzzTree function', () => {
   it('Replaces node value divisible by 3 with Fizz', () => {
-    let fizz = fizzBuzz(BST);
-    expect(fizz.root.val).toBe('Fizz');
+    const test = new BinaryTree();
+    test.add(9);
+    const result = fizzBuzz(test);
+    expect(result.tree.root.value).toBe('Fizz');
   });
-
   it('Replaces node value divisible by 5 with Buzz', () => {
-    BST.add(50);
-    let fizz = fizzBuzz(BST);
-    expect(fizz.root.right.val).toBe('Buzz');
+    const test = new BinaryTree();
+    test.add(20);
+    const result = fizzBuzz(test);
+    expect(result.tree.root.value).toBe('Buzz');
   });
 
   it('Replaces node value divisible by 15 with FizzBuzz', () => {
-    let FizzTree = new BinarySearchTree(45);
-    let fizz = fizzBuzz(FizzTree);
-    expect(fizz.root.val).toBe('FizzBuzz');
+    const test = new BinaryTree();
+    test.add(60);
+    const result = fizzBuzz(test);
+    expect(result.tree.root.value).toBe('FizzBuzz');
   });
 
-  it('Returns an error with no tree argument', () => {
-    let fizz = fizzBuzz();
-    expect(fizz).toBe('No tree value');
+  it('returns a string for values not divisible by 3, 5, or 15', () => {
+    const test = new BinaryTree();
+    test.add(11);
+    const result = fizzBuzz(test);
+    expect(result.tree.root.value).toBe('11');
   });
+
 });

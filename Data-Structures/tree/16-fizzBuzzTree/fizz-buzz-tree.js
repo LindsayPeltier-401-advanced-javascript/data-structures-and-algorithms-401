@@ -12,7 +12,7 @@ function fizzBuzz(value) {
   } else if (value % 3 === 0) {
     return 'Fizz';
   } else {
-    return value;
+    return value.toString();
   }
 }
 
