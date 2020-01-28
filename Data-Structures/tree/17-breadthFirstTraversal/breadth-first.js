@@ -1,3 +1,5 @@
+'use strict';
+
 class Tree {
   constructor(value, left, right) {
     this.value = value;
@@ -30,10 +32,16 @@ const breadthFirstTraversal = (tree, callback) => {
   }
 };
 
-let tree = new Tree(1,
-  new Tree(2, null, null), new Tree(3,
-    new Tree(4, null, null), null));
+let tree = new Tree(2,
+  new Tree(7, null, null), 
+  new Tree(5,
+  new Tree(2, null, null), 
+  new Tree(6,
+  new Tree(9,null,null),
+  new Tree(5,
+  new Tree(11,null, null),
+  new Tree(4,null)))));
 
 breadthFirstTraversal(tree, console.log);
-// Will print "1,2,3,4"
+
 
