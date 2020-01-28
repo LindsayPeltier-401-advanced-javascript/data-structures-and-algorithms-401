@@ -25,5 +25,5 @@ The Big O space complexity of a BST search would be O(1).
 
 [Code](./fizz-buzz-tree.js) <br/>
 [Travis-CI](https://www.travis-ci.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401) <br/>
-[PR]() <br/>
+[PR](https://github.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/pull/15) <br/>
 ![whiteboard](../../../assets/fizzbuzzWB.JPG)

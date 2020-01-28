@@ -16,4 +16,5 @@ Daily code challenges for COCC-DevStation
 12. [](link)
 13. [](link)
 15. [Binary Trees and BST](./Data-Structures/tree/15-Implementation-Trees/tree.js)
+16. [FizzBuzz](./Data-Structures/tree/16-fizzBuzzTree/fizz-buzz-tree.js)
 

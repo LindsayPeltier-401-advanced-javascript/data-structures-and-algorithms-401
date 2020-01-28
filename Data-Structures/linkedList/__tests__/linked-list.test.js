@@ -111,3 +111,4 @@ it('removes nodes from the linked list', () => {
   linkedList.remove(3);
   expect(linkedList.head.next.value).toEqual(2);
 });
+
