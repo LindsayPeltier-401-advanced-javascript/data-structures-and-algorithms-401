@@ -138,7 +138,35 @@ class LinkedList {
       previousList.next = current.next;
     }
   }
-}
 
+  /* k-th Value to the end of the linked list- Lab 07 ---------------------> */
+
+  /**
+     * Returns the listC value based on given input from length of array
+     * @param {*} k 
+     */
+
+  kthFromEnd(k) {
+    let current = this.head;
+    let counter = 0;
+
+    while (current !== null) {
+      counter++;
+      current = current.next;
+    }
+
+    current = this.head;
+
+    if (k < 0) return 'Error';
+
+    for (let i = 0; i < counter - k; i++) {
+      current = current.next;
+    }
+
+    if (k > counter - 1) return 'Error';
+
+    return current.value;
+  }
+}
 
 module.exports = LinkedList;
