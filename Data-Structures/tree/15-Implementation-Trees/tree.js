@@ -46,7 +46,7 @@ class Node {
 class BinaryTree {
   constructor() {
     this.root = new Node();
-  }
+  }  
 }
 
 /**
