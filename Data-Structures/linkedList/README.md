@@ -1,6 +1,5 @@
 # Linked Lists
 
-Create a linked list, search to see if a specific value is present, and return a string of all values in the list.
 
 ## Challenge
 
@@ -19,6 +18,11 @@ Write tests to prove the following functionality:
 - Can successfully insert a node before the first node of a linked list
 - Can successfully insert after a node in the middle of the linked list
 - Can successfully insert a node after the last node of the linked list
+- Where k is greater than the length of the linked list
+- Where k and the length of the list are the same
+- Where k is not a positive integer
+- Where the linked list is of a size 1
+
 
 ## Approach & Efficiency
 
@@ -33,6 +37,7 @@ Write tests to prove the following functionality:
   .insertBefore(value, newVal) which add a new node with the given newValue immediately before the first value node
   .insertAfter(value, newVal) which add a new node with the given newValue immediately after the first value node
 *Stretch Goal: Write an additional method to delete a node with the given value from the linked list.
+*Write a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list. You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
 
 ## Links and Resources
 
@@ -47,3 +52,7 @@ Write tests to prove the following functionality:
 ## Solution
 ![whiteboard](../../assets/06ll-insertions.JPG)
 ![whiteboard](../../assets/06ll-insertions.JPG)
+![whiteboard](../../assets/kthfromendWB.JPG)
+![whiteboard](../../assets/IMG_4238.JPG)
+
+
