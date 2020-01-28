@@ -33,15 +33,16 @@ const breadthFirstTraversal = (tree, callback) => {
 };
 
 let tree = new Tree(2,
-  new Tree(7, null, null), 
+  new Tree(7, null, null),
   new Tree(5,
-  new Tree(2, null, null), 
-  new Tree(6,
-  new Tree(9,null,null),
-  new Tree(5,
-  new Tree(11,null, null),
-  new Tree(4,null)))));
+    new Tree(2, null, null),
+    new Tree(6,
+      new Tree(9, null, null),
+      new Tree(5,
+        new Tree(11, null, null),
+        new Tree(4, null)))));
 
 breadthFirstTraversal(tree, console.log);
 
+module.exports = breadthFirstTraversal;
 
