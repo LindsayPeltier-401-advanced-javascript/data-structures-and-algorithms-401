@@ -112,3 +112,45 @@ it('removes nodes from the linked list', () => {
   expect(linkedList.head.next.value).toEqual(2);
 });
 
+/* Tests for Lab 07, Kth from the End  --------------------------------------------------> */
+it('gives an error message if k is greater than the length of the linked list', () => {
+  let linkedList = new LinkedList();
+  linkedList.insert(1);
+  linkedList.insert(2);
+  linkedList.insert(3);
+  linkedList.insert(4);
+  expect(linkedList.kthFromEnd(5)).toEqual('Error');
+});
+
+it('gives an error if k and the length of the list are the same', () => {
+  let linkedList = new LinkedList();
+  linkedList.insert(6);
+  linkedList.insert(7);
+  linkedList.insert(8);
+  linkedList.insert(9);
+  expect(linkedList.kthFromEnd(9)).toEqual('Error');
+});
+
+it('gives an error whenever k is not a positive integer', () => {
+  let linkedList = new LinkedList();
+  linkedList.insert(10);
+  linkedList.insert(11);
+  linkedList.insert(12);
+  linkedList.insert(13);
+  expect(linkedList.kthFromEnd(-1)).toEqual('Error');
+});
+
+it('gives an error when linked list has a length of 1', () => {
+  let linkedList = new LinkedList();
+  linkedList.insert(1);
+  expect(linkedList.kthFromEnd(1)).toEqual('Error');
+});
+
+it('Returns the node value when k is found in the middle of list', () => {
+  let linkedList = new LinkedList();
+  linkedList.insert(14);
+  linkedList.insert(15);
+  linkedList.insert(16);
+  linkedList.insert(17);
+  expect(linkedList.kthFromEnd(3)).toEqual(16);
+});

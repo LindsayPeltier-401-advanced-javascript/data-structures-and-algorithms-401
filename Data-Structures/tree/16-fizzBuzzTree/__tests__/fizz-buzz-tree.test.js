@@ -1,10 +1,13 @@
 
-// 'use strict';
+'use strict';
 
-// const fizzBuzz = require('../fizz-buzz-tree');
-// const { BinaryTree } = require('../../15-Implementation-Trees/tree');
+const fizzBuzz = require('../fizz-buzz-tree');
+const { BinaryTree } = require('../../15-Implementation-Trees/tree');
 
-
+it('will return true', () => {
+  const True = 'true';
+  expect(True).toBe('true');
+});
 // describe('Testing the FizzBuzzTree function', () => {
 //   it('Replaces node value divisible by 3 with Fizz', () => {
 //     const test = new BinaryTree();
