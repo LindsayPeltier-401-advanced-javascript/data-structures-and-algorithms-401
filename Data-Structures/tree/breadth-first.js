@@ -46,3 +46,19 @@ breadthFirstTraversal(tree, console.log);
 
 module.exports = breadthFirstTraversal;
 
+
+// breadthFirst(tree) {
+//   if (tree === null || tree === undefined) {
+//     return 'error';
+//   }
+
+//   let queue = [tree.root];
+//   let currentNode = queue.shift();
+
+//   while (currentNode) {
+//     console.log(currentNode.value);
+//     queue.push(currentNode.left);
+//     queue.push(currentNode.right);
+//     currentNode = queue.shift();
+//   }
+// }
