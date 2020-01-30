@@ -31,6 +31,8 @@ The Big O space complexity of a BST search would be O(1).
 [Travis-CI](https://www.travis-ci.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401) <br/>
 [PR](https://github.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/pull/13)
 
+***
+
 # Trees
 Conduct “FizzBuzz” on a tree while traversing through it. Change the values of each of the nodes dependent on the current node’s value
 
@@ -59,7 +61,9 @@ The Big O space complexity of a BST search would be O(1).
 [Code](./fizz-buzz-tree.js) <br/>
 [Travis-CI](https://www.travis-ci.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401) <br/>
 [PR](https://github.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/pull/15) <br/>
-![whiteboard](../../../assets/fizzbuzzWB.JPG)
+![whiteboard](../../assets/fizzbuzzWB.JPG)
+
+***
 
 # Challenge Summary - Code Challenge #17
 Breadth First Traversal of a Binary Tree
@@ -78,5 +82,21 @@ Time is 0(n), dependant on how many nodes are present.
 [Code](./breadth-first.js) <br/>
 [Travis-CI](https://www.travis-ci.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401) <br/>
 [PR](https://github.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/pull/18) <br/>
-![whiteboard](../../../assets/BreadthFirstWB.JPG)
+![whiteboard](../../assets/BreadthFirstWB.JPG)
 
+***
+
+# Challenge Summary - Code Challenge #18
+Max Value of a Binary Search Tree
+
+## Challenge Description
+Write an instance method called find-maximum-value. Without utilizing any of the built-in methods available to your language, return the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+
+## Approach & Efficiency
+I can find the maximum node value by traversing right pointers until I reach the rightmost node, using a Binary Search Tree.
+
+## Solution
+[Code](./maxValue.js) <br/>
+[Travis-CI](https://www.travis-ci.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401) <br/>
+[PR](https://github.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/pull/) <br/>
+![whiteboard]()

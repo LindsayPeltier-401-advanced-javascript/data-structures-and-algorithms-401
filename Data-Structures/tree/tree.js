@@ -2,13 +2,14 @@
 
 /**
  * Node
- * @class 
+ * @class
  */
 class Node {
-  constructor(value = null) {
+  constructor(value, left, right) {
     this.value = value;
-    this.left = null;
-    this.right = null;
+    this.left = left || null;
+    this.right = right || null;
+
   }
 
   /**
@@ -17,7 +18,7 @@ class Node {
   preOrder(callback) {
     callback(this.value);
     if (this.left) this.left.preorder(callback);
-    if (this.right) this.right.preorder(callback);
+    //if (this.right) this.right.preorder(callback);
   }
 
   /**
@@ -46,7 +47,7 @@ class Node {
 class BinaryTree {
   constructor() {
     this.root = new Node();
-  }  
+  }
 }
 
 /**
@@ -95,6 +96,7 @@ class BinarySearchTree {
   contains(value) {
     return this.search(this.tree.root, value);
   }
+
   /**
    * @param root
    * @param value
@@ -111,4 +113,5 @@ class BinarySearchTree {
   }
 }
 
+//exports.BinaryTree = BinaryTree;
 module.exports = BinarySearchTree;

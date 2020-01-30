@@ -1,86 +1,51 @@
 'use strict';
 
-const Node = require('../../node');
-const BinaryTree = require('../../maxValue');
+const BinarySearchTree = require('../tree');
 
-/*
-        70
-      /      \
-    60        100
-  /   \      /    \
-20    65    80      120
-*/
-
-let root = new Node(70);
-let sixty = new Node(60);
-let twenty = new Node(20);
-let sixtyFive = new Node(65);
-let hundred = new Node(100);
-let eighty = new Node(80);
-let hundredTwenty = new Node(120);
-
-root.left = sixty;
-root.right = hundred;
-
-sixty.left = twenty;
-sixty.right = sixtyFive;
-
-hundred.left = eighty;
-hundred.right = hundredTwenty;
-
-
-const tree = new BinaryTree(root);
-
-describe('Maximun Value Function', () => {
-  it('should create an instance of a tree', () => {
-    let tree = new BinaryTree;
-    expect(tree).toBeInstanceOf(BinaryTree);
+describe('Tests for the Binary Tree and Binary Search Tree classes', () => {
+  it('instantiates an empty tree', () => {
+    const searchTree = new BinarySearchTree();
+    expect(searchTree).not.toBeNull();
   });
 
-  it('should return the max value in the tree', () => {
-    let max = tree.findMaximumValue(root);
-    expect(max).toBe(120);
-
-  });
-});
-
-describe('Traversals', () => {
-
-  beforeEach(() => {
-    let root = new Node(70);
-    let sixty = new Node(60);
-    let twenty = new Node(20);
-    let sixtyFive = new Node(65);
-    let hundred = new Node(100);
-    let eighty = new Node(80);
-    let hundredTwenty = new Node(120);
-
-    root.left = sixty;
-    root.right = hundred;
-
-    sixty.left = twenty;
-    sixty.right = sixtyFive;
-
-    hundred.left = eighty;
-    hundred.right = hundredTwenty;
-
-    tree.root = root;
+  it('instantiates a tree with a single root node', () => {
+    const searchTree = new BinarySearchTree();
+    searchTree.add(5);
+    expect(searchTree.tree.root.value).toBe(5);
   });
 
-  it('Can successfully return a collection from a preorder traversal', () => {
-    let preOrder = tree.preOrder();
-    expect(preOrder).toStrictEqual([70, 60, 20, 65, 100, 80, 120]);
+  it('adds a left child and right child to a single root node', () => {
+    const searchTree = new BinarySearchTree();
+    searchTree.add(1);
+    // searchTree.add(2);
+    // searchTree.add(3);
+    expect(searchTree.tree.root.value).toBe(1);
+    // expect(searchTree.tree.root.left.value).toBe(2);
+    // expect(searchTree.tree.root.right.value).toBe(3);
   });
 
-
-  it('Can successfully return a collection from an inorder traversal', () => {
-    let order = tree.inOrder();
-    expect(order).toStrictEqual([20, 60, 65, 70, 80, 100, 120]);
+  it('can successfully return a collection from a preorder traversal', () => {
+    const searchTree = new BinarySearchTree();
+    for (let i = 0; i < 11; i++) searchTree.add(i);
+    const collection = [];
+    searchTree.tree.root.preOrder(value => collection.push(value));
+    expect(collection).toEqual[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   });
 
-  it('Can successfully return a collection from a postorder traversal', () => {
-    let post = tree.postOrder();
-    expect(post).toStrictEqual([20, 65, 60, 80, 120, 100, 70]);
+  it('returns a collection from an inorder traversal', () => {
+    const searchTree = new BinarySearchTree();
+    for (let i = 0; i < 11; i++) searchTree.add(i);
+    const collection = new Array();
+    searchTree.tree.root.inOrder(value => collection.push(value));
+    expect(collection).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+  });
+
+  it('returns a collection from a postorder traversal', () => {
+    const searchTree = new BinarySearchTree();
+    for (let i = 0; i < 11; i++) searchTree.add(i);
+    const collection = new Array();
+    searchTree.tree.root.postOrder(value => collection.push(value));
+    expect(collection).toEqual([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]);
   });
 
 });

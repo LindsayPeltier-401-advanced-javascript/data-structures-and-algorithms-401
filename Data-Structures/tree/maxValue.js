@@ -1,30 +1,23 @@
 'use strict';
 
-class BinaryTree {
-  constructor(node) {
-    this.root = node;
-  }
+// const Node = require('./node');
+// const BinaryTree = require('/tree');
+// const BinarySearchTree = require('/tree');
+// const Tree = require('./tree');
 
-  findMaximumValue(tree) {
-    if (tree === null || tree === undefined) {
-      return 'error';
-    }
-    let max = tree.root.value;
+// class MaxTree extends Tree {
+//   constructor() {
+//     super();
+//   }
 
-    let _walk = node => {
-      if (node.left) {
-        _walk(node.left);
-      }
-      if (max < node.value) {
-        max = node.value;
-      }
-      if (node.right) {
-        _walk(node.right);
-      }
-    };
-    _walk(tree.root);
-    return max;
-  }
-}
+//   maxValue() {
+//     let currentHighest = null;
+//     this.tree.root.inOrder(value => {
+//       if (!currentHighest) currentHighest = value;
+//       if (value > currentHighest) currentHighest = value;
+//     });
+//     return currentHighest;
+//   }
+// }
 
-module.exports = BinaryTree;
+//module.exports = maxTree; 
