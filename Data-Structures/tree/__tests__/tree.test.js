@@ -1,6 +1,8 @@
 'use strict';
 
 const BinarySearchTree = require('../tree');
+const Tree = require('../tree');
+const fizzBuzz = require('../fizz-buzz-tree');
 
 describe('Tests for the Binary Tree and Binary Search Tree classes', () => {
   it('instantiates an empty tree', () => {
@@ -24,7 +26,7 @@ describe('Tests for the Binary Tree and Binary Search Tree classes', () => {
     // expect(searchTree.tree.root.right.value).toBe(3);
   });
 
-  it('can successfully return a collection from a preorder traversal', () => {
+  it('returns a collection from a preorder traversal', () => {
     const searchTree = new BinarySearchTree();
     for (let i = 0; i < 11; i++) searchTree.add(i);
     const collection = [];
@@ -47,5 +49,34 @@ describe('Tests for the Binary Tree and Binary Search Tree classes', () => {
     searchTree.tree.root.postOrder(value => collection.push(value));
     expect(collection).toEqual([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]);
   });
-
 });
+
+describe('Testing the FizzBuzzTree function', () => {
+  it('turns 3 into Fizz', () => {
+    const test = new Tree();
+    test.add(3);
+    const result = fizzBuzz(test);
+    expect(result.tree.root.value).toBe('Fizz');
+  });
+  it('turns 5 into Buzz', () => {
+    const test = new Tree();
+    test.add(5);
+    const result = fizzBuzz(test);
+    expect(result.tree.root.value).toBe('Buzz');
+  });
+
+  it('turns 15 into FizzBuzz', () => {
+    const test = new Tree();
+    test.add(15);
+    const result = fizzBuzz(test);
+    expect(result.tree.root.value).toBe('FizzBuzz');
+  });
+
+  it('turns 7 into 7', () => {
+    const test = new Tree();
+    test.add(7);
+    const result = fizzBuzz(test);
+    expect(result.tree.root.value).toBe('7');
+  });
+});
+
