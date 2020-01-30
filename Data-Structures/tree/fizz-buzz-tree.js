@@ -1,8 +1,5 @@
 'use strict';
 
-// const BinaryTree = require('/tree');
-// const BinarySearchTree = require('/tree');
-
 /**
  * Node value is changed, based upon modular operator
  * @param {*} value

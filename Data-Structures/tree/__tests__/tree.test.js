@@ -3,6 +3,7 @@
 const BinarySearchTree = require('../tree');
 const Tree = require('../tree');
 const fizzBuzz = require('../fizz-buzz-tree');
+const MaxTree = require('../maxvalue');
 
 describe('Tests for the Binary Tree and Binary Search Tree classes', () => {
   it('instantiates an empty tree', () => {
@@ -77,6 +78,38 @@ describe('Testing the FizzBuzzTree function', () => {
     test.add(7);
     const result = fizzBuzz(test);
     expect(result.tree.root.value).toBe('7');
+  });
+});
+
+describe('Testing the method maxValue that is extended off the binary tree class', () => {
+  it('should return the highest value in the tree', () => {
+    const test = new MaxTree();
+    test.add(20);
+    test.add(25);
+    test.add(100);
+    test.add(65);
+    expect(test.maxValue()).toEqual(100);
+  });
+
+  it('should return the val of the only node in the tree', () => {
+    const test = new MaxTree();
+    test.add(20);
+    expect(test.maxValue()).toEqual(20);
+  });
+
+  // it('should return null when the tree is empty', () => {
+  //   const test = new MaxTree();
+  //   expect(test.maxValue()).toBeNull();
+  // });
+
+  it('should return the highest value in a tree of negative #', () => {
+    const test = new MaxTree();
+    test.add(-1);
+    test.add(-24);
+    test.add(-200);
+    test.add(-420);
+
+    expect(test.maxValue()).toEqual(-1);
   });
 });
 

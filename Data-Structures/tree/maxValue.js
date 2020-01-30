@@ -1,23 +1,26 @@
+
 'use strict';
 
-// const Node = require('./node');
-// const BinaryTree = require('/tree');
-// const BinarySearchTree = require('/tree');
-// const Tree = require('./tree');
+const Tree = require('./tree');
 
-// class MaxTree extends Tree {
-//   constructor() {
-//     super();
-//   }
+/**
+ * @class
+ */
+class MaxTree extends Tree {
+  constructor() {
+    super();
+  }
+  /**
+   * @returns number
+   */
+  maxValue() {
+    let currentHighest = null;
+    this.tree.root.inOrder(value => {
+      if (!currentHighest) currentHighest = value;
+      if (value > currentHighest) currentHighest = value;
+    });
+    return currentHighest;
+  }
+}
 
-//   maxValue() {
-//     let currentHighest = null;
-//     this.tree.root.inOrder(value => {
-//       if (!currentHighest) currentHighest = value;
-//       if (value > currentHighest) currentHighest = value;
-//     });
-//     return currentHighest;
-//   }
-// }
-
-//module.exports = maxTree; 
+module.exports = MaxTree;
