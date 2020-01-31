@@ -27,8 +27,9 @@ function fizzBuzzTree(tree) {
   let recursive = node => {
     if (node.left) recursive(node.left);
     node.value = fizzBuzz(node.value);
+    if (node.right) recursive(node.right);
   };
-  recursive(tree.root);
+  recursive(tree.tree.root);
   return tree;
 }
 
