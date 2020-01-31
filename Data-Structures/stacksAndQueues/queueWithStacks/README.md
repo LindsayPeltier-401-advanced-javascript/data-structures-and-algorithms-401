@@ -36,7 +36,7 @@ Queue:
 
 #### Documentation
 Run live-server on /doc files for full code documentation
-* [DOCUMENTATION](/Users/lpeltier/DevStation/devstation/401/data-structures-and-algorithms-401/docs/stacksAndQueues_stacks-and-queues.js.html)
+* [DOCUMENTATION](/Users/lpeltier/DevStation/devstation/401/data-structures-and-algorithms-401/docs/stacksAndQueues_queueWithStacks_queue-with-stacks.js.html)
 
 ### Solutions
 
