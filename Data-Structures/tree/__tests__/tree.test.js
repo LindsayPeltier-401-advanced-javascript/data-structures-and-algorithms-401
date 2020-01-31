@@ -3,7 +3,10 @@
 const BinarySearchTree = require('../tree');
 const Tree = require('../tree');
 const fizzBuzz = require('../fizz-buzz-tree');
-const MaxTree = require('../maxvalue');
+const MaxTree = require('../maxValue');
+const breadthFirst = require('../breadth-first');
+const breadthTree = require('../tree');
+
 
 describe('Tests for the Binary Tree and Binary Search Tree classes', () => {
   it('instantiates an empty tree', () => {
@@ -81,6 +84,30 @@ describe('Testing the FizzBuzzTree function', () => {
   });
 });
 
+
+// describe('Testing the breadth first traversal function', () => {
+//   it('should do nothing if given an empty list', () => {
+//     const test = new breadthTree();
+//     expect(breadthFirst(test)).toEqual([null]);
+//   });
+
+//   it('should return a value of a single node', () => {
+//     const test = new breadthTree();
+//     test.add(30);
+//     expect(breadthFirst(test)).toEqual([30]);
+//   });
+
+//   it('should return the values of multiple nodes', () => {
+//     const test = new breadthTree();
+//     test.add(30);
+//     test.add(40);
+//     test.add('David');
+//     test.add(10);
+
+//     expect(breadthFirst(test)).toEqual([30, 'David', 40, 10]);
+//   });
+// });
+
 describe('Testing the method maxValue that is extended off the binary tree class', () => {
   it('should return the highest value in the tree', () => {
     const test = new MaxTree();
@@ -112,4 +139,3 @@ describe('Testing the method maxValue that is extended off the binary tree class
     expect(test.maxValue()).toEqual(-1);
   });
 });
-
