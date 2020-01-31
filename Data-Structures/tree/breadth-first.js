@@ -1,32 +1,39 @@
-
 'use strict';
 
-//const Tree = require('./tree');
-const Queue = require('../../data-structures/queue/queue');
-
-/**
- * 
- * @param {*} tree 
- */
-function breadthFirstList(tree) {
-  return breadthFirst(tree.tree.root);
-}
-/**
- * 
- * @param {*} root 
- */
-function breadthFirst(root) {
-  const values = new Array();
-  const queue = new Queue();
-  if (!root) return null;
-  queue.enqueue(root);
-  while (!queue.isEmpty()) {
-    let node = queue.dequeue();
-    values.push(node.val);
-    if (node.left) queue.enqueue(node.left);
-    if (node.right) queue.enqueue(node.right);
+class Queue {
+  constructor(front = null, rear = null) {
+    this.front = front;
+    this.rear = rear;
   }
-  return values;
 }
 
-module.exports = breadthFirstList;
+/**
+ * @param {*} tree
+ * @returns list of values from breadth first traversal
+ */
+function breadthFirst(tree) {
+  const queue = new Queue();
+  const output = [];
+  let current = tree.root;
+  if (current.value === null) {
+    return null;
+  }
+  queue.enqueue(current);
+
+  while (!queue.isEmpty()) {
+    current = queue.dequeue();
+    output.push(current.value);
+    if (current.left !== null) {
+      queue.enqueue(current.left);
+    }
+    if (current.right !== null) {
+      queue.enqueue(current.right);
+    }
+  }
+  return output;
+}
+
+/** 
+ * @module breadthFirst
+*/
+module.exports = breadthFirst;

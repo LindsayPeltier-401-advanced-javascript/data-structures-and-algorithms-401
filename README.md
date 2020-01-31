@@ -11,7 +11,7 @@ Daily code challenges for COCC-DevStation
 6. [Linked List Insertions](./Data-Structures/linkedList/linked-list.js)
 7. [Linked List 'K'th value](./Data-Structures/linkedList/linked-list.js)
 8. [Linked List Merge](link)
-10. [Stacks and Queues](link)
+10. [Stacks and Queues](./Data-Structures/stacksAndQueues/stacks-and-queues.js)
 11. [Queue with Two Stacks](link)
 12. [](link)
 13. [](link)
