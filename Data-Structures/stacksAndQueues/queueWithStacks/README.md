@@ -44,4 +44,4 @@ Run live-server on /doc files for full code documentation
 
 ### Whiteboard
 
-[Whiteboard](../../assets/)
+![whiteboard](../../../assets/queue2stacks.JPG)
