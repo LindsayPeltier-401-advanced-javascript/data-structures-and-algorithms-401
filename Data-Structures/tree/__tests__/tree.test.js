@@ -3,7 +3,7 @@
 const BinarySearchTree = require('../tree');
 const Tree = require('../tree');
 const fizzBuzz = require('../fizz-buzz-tree');
-const MaxTree = require('../maxvalue');
+const MaxTree = require('../maxValue');
 const breadthFirst = require('../breadth-first');
 const breadthTree = require('../tree');
 
