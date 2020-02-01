@@ -30,7 +30,7 @@ Queue:
 
 ### Links and Resources
 * [SUBMISSION PR](https://github.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/pull/23)
-* [TRAVIS-CI]()
+* [TRAVIS-CI](https://www.travis-ci.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/builds/147052877)
 
 #### Documentation
 Run live-server on /doc files for full code documentation
