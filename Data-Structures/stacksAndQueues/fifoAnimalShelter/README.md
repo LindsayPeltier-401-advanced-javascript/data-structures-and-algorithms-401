@@ -34,7 +34,7 @@ Queue:
 
 #### Documentation
 Run live-server on /doc files for full code documentation
-* [DOCUMENTATION]()
+* [DOCUMENTATION](/Users/lpeltier/DevStation/devstation/401/data-structures-and-algorithms-401/docs/stacksAndQueues_fifoAnimalShelter_fifo-animal-shelter.js.html)
 
 ### Solutions
 

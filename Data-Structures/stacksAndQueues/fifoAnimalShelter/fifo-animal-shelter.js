@@ -21,8 +21,8 @@ class AnimalShelter {
 
   /**
    * Dequeue function
-   * @param  {} pref
-   * @returns value of prefrence type
+   * @param  {} preference
+   * @returns value of preference type
    */
   dequeue(preference) {
     if (preference !== 'dog' || preference !== 'cat') {
