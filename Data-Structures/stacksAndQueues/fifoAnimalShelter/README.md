@@ -2,10 +2,10 @@
 
 ## Code Challenge #12
 
-**Create a class called AnimalShelter which holds only dogs and cats. 
+**Create a class called AnimalShelter which holds only dogs and cats.**
 The shelter operates using a first-in, first-out approach.
 
-**Implement the following methods:
+**Implement the following methods:**
 - enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.
 - dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then return null.
 
@@ -30,7 +30,7 @@ Queue:
 
 ### Links and Resources
 * [SUBMISSION PR](https://github.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/pull/23)
-* [TRAVIS-CI]()
+* [TRAVIS-CI](https://www.travis-ci.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/builds/147052877)
 
 #### Documentation
 Run live-server on /doc files for full code documentation
