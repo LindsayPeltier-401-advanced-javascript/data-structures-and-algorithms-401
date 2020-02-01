@@ -14,7 +14,7 @@ Daily code challenges for COCC-DevStation
 10. [Stacks and Queues](./Data-Structures/stacksAndQueues/stacks-and-queues.js)
 11. [Queue with Two Stacks](./Data-Structures/stacksAndQueues/queueWithStacks/queue-with-stacks.js)
 12. [First In, First Out Animal Shelter](./Data-Structures/stacksAndQueues/fifoAnimalShelter/fifo-animal-shelter.js)
-13. [](link)
+13. [Multi-Bracket Validation](./Data-Structures/stacksAndQueues/multiBracketValidation/multi-bracket-validation.js)
 15. [Binary Trees and BST](./Data-Structures/tree/tree.js)
 16. [FizzBuzz](./Data-Structures/tree/fizz-buzz-tree.js)
 17. [BreadthFirst](./Data-Structures/tree/breadth-first.js)
