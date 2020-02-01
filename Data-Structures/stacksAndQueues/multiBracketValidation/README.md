@@ -41,3 +41,4 @@ Run live-server on /doc files for full code documentation
 ### Solutions
 
 [CODE](./multi-bracket-validation.js)
+![whiteboard](../../../assets/bracketValidation.JPG)
