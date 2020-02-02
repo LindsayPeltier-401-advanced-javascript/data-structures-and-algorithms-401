@@ -98,5 +98,5 @@ I can find the maximum node value by traversing right pointers until I reach the
 ## Solution
 [Code](./maxValue.js) <br/>
 [Travis-CI](https://www.travis-ci.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401) <br/>
-[PR](https://github.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/pull/) <br/>
+[PR](https://github.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/pull/26) <br/>
 ![whiteboard](../../assets/MaxValueWB.JPG)
