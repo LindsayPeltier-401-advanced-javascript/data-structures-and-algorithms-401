@@ -167,6 +167,36 @@ class LinkedList {
 
     return current.value;
   }
+  /* Merge Linked List- Lab 08 ---------------------> */
+  /**
+   * @function
+   * @param {object} listA 
+   * @param {object} listB 
+   * @returns {object}
+   */
+  mergeLists(listA, listB) {
+    let listC = new LinkedList();
+    let nodeA = listA.head;
+    let nodeB = listB.head;
+
+    if (!nodeA && !nodeB) return 'Error';
+
+    while (nodeA !== null && nodeB !== null) {
+      if (nodeA.value <= nodeB.value) {
+        listC.next = nodeA;
+        nodeA = nodeA.next;
+      } else {
+        listC.next = nodeB;
+        nodeB = nodeB.next;
+      }
+      listC = listC.next;
+    }
+
+    if (nodeA === null) { listC.next = nodeB; }
+    if (nodeB === null) { listC.next = nodeA; }
+
+    return listC;
+  }
 }
 
 module.exports = LinkedList;

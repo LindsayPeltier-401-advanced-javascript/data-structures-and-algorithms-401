@@ -1,6 +1,7 @@
 'use strict';
 
 const LinkedList = require('../linked-list.js');
+const { mergeLists } = require('../linked-list');
 
 describe('instantiate an empty linked list', () => {
   let list = new LinkedList();
@@ -66,91 +67,114 @@ describe('Returns all values currently in the linked list', () => {
   });
 });
 
-/* Tests for Lab 06, Linked List Insertions --------------------------------------------------> */
-it('adds a node to the end of the list', () => {
-  let linkedList = new LinkedList();
-  linkedList.insert(10);
-  linkedList.append(20);
-  expect(linkedList.head.next.value).toEqual(20);
-});
+describe('Linked List', () => {
+  /* Tests for Lab 06, Linked List Insertions --------------------------------------------------> */
+  it('adds a node to the end of the list', () => {
+    let linkedList = new LinkedList();
+    linkedList.insert(10);
+    linkedList.append(20);
+    expect(linkedList.head.next.value).toEqual(20);
+  });
 
-it('adds multiple nodes to the end of the list', () => {
-  let linkedList = new LinkedList();
-  linkedList.insert(10);
-  linkedList.append(20);
-  linkedList.append(30);
-  expect(linkedList.head.next.next.value).toEqual(30);
-});
+  it('adds multiple nodes to the end of the list', () => {
+    let linkedList = new LinkedList();
+    linkedList.insert(10);
+    linkedList.append(20);
+    linkedList.append(30);
+    expect(linkedList.head.next.next.value).toEqual(30);
+  });
 
-it('inserts a node before a value located in the middle of list', () => {
-  let linkedList = new LinkedList();
-  linkedList.insert(1);
-  linkedList.insert(2);
-  linkedList.insert(3);
-  linkedList.insert(4);
-  linkedList.insertAfter(3, 10);
-  expect(linkedList.head.next.next.value).toEqual(10);
-  expect(linkedList.head.next.next.next.value).toEqual(2);
-});
+  it('inserts a node before a value located in the middle of list', () => {
+    let linkedList = new LinkedList();
+    linkedList.insert(1);
+    linkedList.insert(2);
+    linkedList.insert(3);
+    linkedList.insert(4);
+    linkedList.insertAfter(3, 10);
+    expect(linkedList.head.next.next.value).toEqual(10);
+    expect(linkedList.head.next.next.next.value).toEqual(2);
+  });
 
-it('successfully insert a node after the last node in the list', () => {
-  let linkedList = new LinkedList();
-  linkedList.insert(10);
-  linkedList.insert(30);
-  linkedList.insert(40);
-  linkedList.insertAfter(10, 20);
-  expect(linkedList.head.next.next.next.value).toEqual(20);
-});
+  it('successfully insert a node after the last node in the list', () => {
+    let linkedList = new LinkedList();
+    linkedList.insert(10);
+    linkedList.insert(30);
+    linkedList.insert(40);
+    linkedList.insertAfter(10, 20);
+    expect(linkedList.head.next.next.next.value).toEqual(20);
+  });
 
-it('removes nodes from the linked list', () => {
-  let linkedList = new LinkedList();
-  linkedList.insert(1);
-  linkedList.insert(2);
-  linkedList.insert(3);
-  linkedList.insert(4);
-  linkedList.remove(3);
-  expect(linkedList.head.next.value).toEqual(2);
-});
+  it('removes nodes from the linked list', () => {
+    let linkedList = new LinkedList();
+    linkedList.insert(1);
+    linkedList.insert(2);
+    linkedList.insert(3);
+    linkedList.insert(4);
+    linkedList.remove(3);
+    expect(linkedList.head.next.value).toEqual(2);
+  });
 
-/* Tests for Lab 07, Kth from the End  --------------------------------------------------> */
-it('gives an error message if k is greater than the length of the linked list', () => {
-  let linkedList = new LinkedList();
-  linkedList.insert(1);
-  linkedList.insert(2);
-  linkedList.insert(3);
-  linkedList.insert(4);
-  expect(linkedList.kthFromEnd(5)).toEqual('Error');
-});
+  /* Tests for Lab 07, Kth from the End  --------------------------------------------------> */
+  it('gives an error message if k is greater than the length of the linked list', () => {
+    let linkedList = new LinkedList();
+    linkedList.insert(1);
+    linkedList.insert(2);
+    linkedList.insert(3);
+    linkedList.insert(4);
+    expect(linkedList.kthFromEnd(5)).toEqual('Error');
+  });
 
-it('gives an error if k and the length of the list are the same', () => {
-  let linkedList = new LinkedList();
-  linkedList.insert(6);
-  linkedList.insert(7);
-  linkedList.insert(8);
-  linkedList.insert(9);
-  expect(linkedList.kthFromEnd(9)).toEqual('Error');
-});
+  it('gives an error if k and the length of the list are the same', () => {
+    let linkedList = new LinkedList();
+    linkedList.insert(6);
+    linkedList.insert(7);
+    linkedList.insert(8);
+    linkedList.insert(9);
+    expect(linkedList.kthFromEnd(9)).toEqual('Error');
+  });
 
-it('gives an error whenever k is not a positive integer', () => {
-  let linkedList = new LinkedList();
-  linkedList.insert(10);
-  linkedList.insert(11);
-  linkedList.insert(12);
-  linkedList.insert(13);
-  expect(linkedList.kthFromEnd(-1)).toEqual('Error');
-});
+  it('gives an error whenever k is not a positive integer', () => {
+    let linkedList = new LinkedList();
+    linkedList.insert(10);
+    linkedList.insert(11);
+    linkedList.insert(12);
+    linkedList.insert(13);
+    expect(linkedList.kthFromEnd(-1)).toEqual('Error');
+  });
 
-it('gives an error when linked list has a length of 1', () => {
-  let linkedList = new LinkedList();
-  linkedList.insert(1);
-  expect(linkedList.kthFromEnd(1)).toEqual('Error');
-});
+  it('gives an error when linked list has a length of 1', () => {
+    let linkedList = new LinkedList();
+    linkedList.insert(1);
+    expect(linkedList.kthFromEnd(1)).toEqual('Error');
+  });
 
-it('Returns the node value when k is found in the middle of list', () => {
-  let linkedList = new LinkedList();
-  linkedList.insert(14);
-  linkedList.insert(15);
-  linkedList.insert(16);
-  linkedList.insert(17);
-  expect(linkedList.kthFromEnd(3)).toEqual(16);
+  it('Returns the node value when k is found in the middle of list', () => {
+    let linkedList = new LinkedList();
+    linkedList.insert(14);
+    linkedList.insert(15);
+    linkedList.insert(16);
+    linkedList.insert(17);
+    expect(linkedList.kthFromEnd(3)).toEqual(16);
+  });
+  /* Tests for Lab 08, Merge Linked Lists  --------------------------------------------------> */
+  xit('Should attach one list to the other', () => {
+    let listA = new LinkedList();
+    let listB = new LinkedList();
+
+    listA.insert(3);
+
+    listB.insert(6);
+    listB.insert(5);
+    listB.insert(4);
+    let merged = mergeLists(listA, listB);
+    expect(merged.value).toEqual(3);
+  });
+
+  xit('Return Error if both lists are empty', () => {
+    let listA = new LinkedList();
+    let listB = new LinkedList();
+    let merged = mergeLists(listA, listB);
+    expect(merged).toBe('Error');
+  });
+
 });

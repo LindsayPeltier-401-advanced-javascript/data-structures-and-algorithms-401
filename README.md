@@ -10,7 +10,7 @@ Daily code challenges for COCC-DevStation
 5. [Linked List Implementation](./Data-Structures/linkedList/linked-list.js)
 6. [Linked List Insertions](./Data-Structures/linkedList/linked-list.js)
 7. [Linked List 'K'th value](./Data-Structures/linkedList/linked-list.js)
-8. [Linked List Merge](link)
+8. [Linked List Merge](./Data-Structures/linkedList/linked-list.js)
 10. [Stacks and Queues](./Data-Structures/stacksAndQueues/stacks-and-queues.js)
 11. [Queue with Two Stacks](./Data-Structures/stacksAndQueues/queueWithStacks/queue-with-stacks.js)
 12. [First In, First Out Animal Shelter](./Data-Structures/stacksAndQueues/fifoAnimalShelter/fifo-animal-shelter.js)

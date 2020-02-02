@@ -46,7 +46,7 @@ Write tests to prove the following functionality:
 [Pull Request Lab 05](https://github.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/pull/11/)
 [Pull Request Lab 06](https://github.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/pull/12/)
 [Pull Request Lab 07](https://github.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/pull/17)
-[Pull Request Lab 08](https://github.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/pull/)
+[Pull Request Lab 08](https://github.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/pull/26)
 
 [Travis](https://www.travis-ci.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401)
 
