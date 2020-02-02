@@ -32,11 +32,11 @@ Queue:
 
 ### Links and Resources
 * [SUBMISSION PR](https://github.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/pull/25)
-* [TRAVIS-CI](https://www.travis-ci.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/builds/)
+* [TRAVIS-CI](https://www.travis-ci.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/builds/147116496)
 
 #### Documentation
 Run live-server on /doc files for full code documentation
-* [DOCUMENTATION]()
+* [DOCUMENTATION](/Users/lpeltier/DevStation/devstation/401/data-structures-and-algorithms-401/docs/stacksAndQueues_multiBracketValidation_multi-bracket-validation.js.html)
 
 ### Solutions
 
