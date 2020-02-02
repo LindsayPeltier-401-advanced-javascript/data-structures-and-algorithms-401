@@ -1,6 +1,6 @@
 'use strict';
 
-let Stack = require('./stacks-and-queues.js');
+const { Stack } = require('../stacks-and-queues');
 
 /**
  * multiBracketValidation
