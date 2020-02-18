@@ -11,6 +11,6 @@
 
 [Blog](./blog.md)
 [Code](./insertion-sort.js) <br/>
-[Travis-CI]() <br/>
-[PR]()
+[Travis-CI](https://www.travis-ci.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/builds/149394385) <br/>
+[PR](https://github.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/pull/27)
 
