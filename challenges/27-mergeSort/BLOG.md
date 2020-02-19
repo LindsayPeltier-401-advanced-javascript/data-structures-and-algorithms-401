@@ -66,6 +66,6 @@ Space: O(n)
 
 ## Submission Links
 [Code](./mergeSort.js) <br/>
-[Travis-CI]() <br/>
+[Travis-CI](https://www.travis-ci.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/builds/149584774) <br/>
 [PR](https://github.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/pull/28)
 
