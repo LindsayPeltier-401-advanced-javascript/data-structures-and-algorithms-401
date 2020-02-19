@@ -63,3 +63,9 @@ ALGORITHM Merge(left, right, arr)
 Time complexity of Merge Sort is \Theta(nLogn) in worst, average and best cases as merge sort always divides the array into two halves and take linear time to merge two halves.
 
 Space: O(n)
+
+## Submission Links
+[Code](./mergeSort.js) <br/>
+[Travis-CI]() <br/>
+[PR](https://github.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/pull/28)
+
