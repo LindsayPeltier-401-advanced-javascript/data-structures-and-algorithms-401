@@ -6,16 +6,6 @@ Unlike other sorting algorithms, there are many different ways to implement quic
 
 The basic idea is to find a “pivot” item in the array to compare all other items against. Items larger than the pivot go to the right; items less than the pivot go to the left. There are two basic operations in the algorithm, swapping items in place and partitioning a section of the array. 
 
-**The basic steps to partition an array are:**
-- Find a “pivot” item in the array. This item is the basis for comparison for a single round.
-- Start a pointer (the left pointer) at the first item in the array.
-- Start a pointer (the right pointer) at the last item in the array.
-- While the value at the left pointer in the array is less than the pivot value, move the left pointer to the right (add 1). Continue until the value at the left pointer is greater than or equal to the pivot value.
-- While the value at the right pointer in the array is greater than the pivot value, move the right pointer to the left (subtract 1). Continue until the value at the right pointer is less than or equal to the pivot value.
-- If the left pointer is less than or equal to the right pointer, then swap the values at these locations in the array.
-- Move the left pointer to the right by one and the right pointer to the left by one.
-- If the left pointer and right pointer don’t meet, go to step 1.
-
 
 ## Psuedocode
 
@@ -57,11 +47,15 @@ The basic idea is to find a “pivot” item in the array to compare all other i
 ![](./assets/quickSort.jpg)
 
 ## Trace
-
-
-## Efficency 
-
-
+**The basic steps to partition an array are:**
+- Find a “pivot” item in the array. This item is the basis for comparison for a single round.
+- Start a pointer (the left pointer) at the left of the pivot.
+- Start a pointer (the right pointer) at the right of the pivot.
+- While the value at the left pointer in the array is less than the pivot value, move the left pointer to the right (add 1). Continue until the value at the left pointer is greater than or equal to the pivot value.
+- While the value at the right pointer in the array is greater than the pivot value, move the right pointer to the left (subtract 1). Continue until the value at the right pointer is less than or equal to the pivot value.
+- If the left pointer is less than or equal to the right pointer, then swap the values at these locations in the array.
+- Move the left pointer to the right by one and the right pointer to the left by one.
+- If the left pointer and right pointer don’t meet, go to step 1.
 
 ## Submission Links
 [Code](./quickSort.js) <br/>
