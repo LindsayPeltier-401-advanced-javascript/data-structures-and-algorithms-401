@@ -59,6 +59,6 @@ The basic idea is to find a “pivot” item in the array to compare all other i
 
 ## Submission Links
 [Code](./quickSort.js) <br/>
-[Travis-CI]() <br/>
+[Travis-CI](https://www.travis-ci.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/builds/149853907) <br/>
 [PR](https://github.com/LindsayPeltier-401-advanced-javascript/data-structures-and-algorithms-401/pull/29)
 
